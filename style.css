@@ -1,0 +1,252 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: white;
+}
+html {
+    scroll-behavior: smooth;
+  }
+body{
+    width: 100vw;
+    background-color: black;
+}
+nav{
+    width: 100vw;
+    height: 50px;
+    display: flex;
+    justify-content: space-between;
+   
+}
+.logo{
+    width: 15%;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    
+}
+.logo img{
+    width: 100%;
+}
+
+.nav_items{
+    width: 85%;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.nav_items a{
+  text-decoration: none;
+  margin: 20px;
+  font-size: 1.3em;
+  color: white;
+}
+
+main{
+    width: 100vw;
+    height: 700px;
+    margin-top: 10px;
+    position: relative;
+    top: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    
+}
+.hero_text{
+    width: 60%;
+    padding: 30px;
+    font-size: 1.3em;
+    
+}
+.hero_text h1{
+    margin-bottom: 15px;
+}
+.hero_img{
+    width: 40%;
+    
+   
+}
+.hero_img img{
+    width: 70%;
+    position: relative;
+    bottom: 200px;
+}
+
+
+
+.section2{
+    width: 100vw;
+    height: 750px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+}
+.icon_img{
+    width: 150px;
+    height: 150px;
+    border-radius: 100%;
+    background-image: url(imgs/icon.jpg);
+    background-size: contain;
+    position: relative;
+    top: 0px;
+}
+
+.about_me{
+    width: 70%;
+    font-size: 1.2em;
+    border: 1px solid white;
+    padding: 15px;
+    text-align: center;
+    border-top-right-radius: 25px;
+    border-bottom-left-radius:  25px;
+}
+.about_me h1{
+    margin-bottom: 15px;
+}
+
+
+
+.section3{
+    width: 100vw;
+    min-height: 750px;
+    text-align: center;
+}
+.section3_items{
+    width: 100vw;
+    min-height: 750px;
+    display: flex;
+    justify-content: space-around;
+
+}
+.webpage{
+    width: 350px;
+    height: 600px;
+    border: 2px solid white;
+    font-size: 1.2em;
+    text-align: center;
+    
+    position: relative;
+    top: 50px;
+}
+.webpage img{
+    width: 100%;
+}
+
+
+.section4{
+    width: 100vw;
+    height: 500px;
+    display: flex;
+    justify-content: space-around;
+}
+form{
+    width: 45%;
+    height: 400px;
+    
+    background-color: rgba(36, 34, 34,0.5);
+    box-shadow: inset 4px 15px 15px rgb(84, 83, 83);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+}
+form input{
+    width: 300px;
+    height: 50px;
+    color: white;
+    margin-bottom: 10px;
+    font-size: 1.3em;
+    background-color: transparent;
+    
+}
+form input:focus{
+    box-shadow: 9px 9px 12px blue ,-9px -9px 12px blue;
+}
+form button{
+    width: 250px;
+    height: 50px;
+    color: white;
+    background-color: blue;
+    margin-top: 10px;
+}
+
+.social_media{
+    width: 45%;
+    height: 400px;
+    
+    background-color: rgba(36, 34, 34,0.5);
+    box-shadow: inset 4px 15px 15px rgb(84, 83, 83);
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.social_media a img{
+    height: 50px;
+}
+
+
+
+@media (width <= 800px) {
+    main{
+        flex-direction: column;
+    }
+    .hero_text{
+        margin-bottom: 10px;
+    }
+    .hero_text .desc{
+        display: none;
+    }
+    .hero_img{
+        width: 90%;
+        
+    }
+    .hero_img img{
+        width: 60%;
+        
+    }
+    .about_me{
+        overflow: scroll;
+    }
+    .icon_img{
+        display: none;
+    }
+    .about_me{
+        margin-top: 20px;
+        border-top-right-radius: 0px;
+    border-bottom-left-radius:  0px;
+    }
+    .logo{
+        width: 40%;
+    }
+    .nav_items{
+        display: none;
+    }
+
+    .section3{
+        margin-top: 20px;
+    }
+    .section3_items{
+        flex-wrap: wrap;
+       
+    }
+.webpage{
+    margin-bottom: 15px;
+}
+.section4{
+    margin-top: 50px;
+}
+form{
+    display: none;
+}
+    
+}
